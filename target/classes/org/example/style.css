@@ -1,0 +1,14 @@
+.anchor{
+    -fx-background-image: url('pacman2.jpg');
+}
+
+.game{
+    -fx-background-image: url('black.jpg');
+}
+
+.chooseGameMap{
+    -fx-background-image: url('dark.jpg');
+}
+#text {
+    -fx-font-size: 15;
+}

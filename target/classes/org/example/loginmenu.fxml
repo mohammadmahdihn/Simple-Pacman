@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="960" prefWidth="806.0" styleClass="anchor" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.LoginMenuController">
+   <stylesheets>
+      <URL value="@style.css" />
+   </stylesheets>
+   <Button alignment="CENTER" layoutX="552.0" layoutY="349.0" mnemonicParsing="false" onMouseClicked="#signup" prefHeight="34.0" prefWidth="74.0" text="Sign up" />
+   <Button alignment="CENTER" layoutX="642.0" layoutY="349.0" mnemonicParsing="false" onMouseClicked="#login" prefHeight="34.0" prefWidth="66.0" text="Login" />
+   <Button alignment="CENTER" layoutX="553.0" layoutY="398.0" mnemonicParsing="false" onMouseClicked="#startGameAsGuest" prefHeight="34.0" prefWidth="154.0" text="Play game as guest" />
+   <Button alignment="CENTER" layoutX="553.0" layoutY="445.0" mnemonicParsing="false" onMouseClicked="#exitGame" prefHeight="34.0" prefWidth="154.0" text="Exit" />
+   <PasswordField fx:id="password" alignment="CENTER" layoutX="550.0" layoutY="304.0" prefHeight="34.0" prefWidth="160.0" promptText="Password" />
+   <TextField fx:id="username" alignment="CENTER" layoutX="550.0" layoutY="256.0" prefHeight="34.0" prefWidth="160.0" promptText="Username" />
+   <Text fill="WHITE" layoutX="538.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to PACMAN!" wrappingWidth="195.9999877929688">
+      <font>
+         <Font name="Eras Medium ITC" size="19.0" />
+      </font>
+   </Text>
+
+</AnchorPane>

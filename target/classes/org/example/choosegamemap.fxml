@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="chooseGameMap" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.ChooseGameMapController">
+   <stylesheets>
+      <URL value="@style.css" />
+   </stylesheets>
+   <top>
+      <Text fill="WHITE" layoutX="538" layoutY="84" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Map and number of lives and start the game" textAlignment="CENTER" wrappingWidth="1256.9999753952027">
+         <font>
+            <Font name="Eras Medium ITC" size="19.0" />
+         </font>
+      </Text>
+   </top>
+   <center>
+      <GridPane fx:id="gameMap" alignment="CENTER_LEFT" prefHeight="378.0" prefWidth="327.0">
+      </GridPane>
+   </center>
+   <left>
+
+      <VBox alignment="BASELINE_CENTER" spacing="5">
+         <Text fill="#efeaea" strokeType="OUTSIDE" strokeWidth="0.0" text="Select a default or random map" wrappingWidth="221.33660620450974">
+            <font>
+               <Font size="15.0" />
+            </font>
+         </Text>
+         <Button mnemonicParsing="false" onMouseClicked="#showAndSelectMap1" prefHeight="26.0" prefWidth="128.0" text="Map 1" />
+         <Button mnemonicParsing="false" onMouseClicked="#showAndSelectMap2" prefHeight="26.0" prefWidth="128.0" text="Map 2" />
+         <Button mnemonicParsing="false" onMouseClicked="#showAndSelectMap3" prefHeight="26.0" prefWidth="128.0" text="Map 3" />
+         <Button mnemonicParsing="false" onMouseClicked="#showAndSelectRandomMap" prefHeight="26.0" prefWidth="128.0" text="Make a random map" />
+         <Pane fx:id="livesPane" prefHeight="200.0" prefWidth="200.0" />
+      </VBox>
+   </left>
+   <bottom>
+      <HBox fx:id="bottomHBox" prefHeight="100.0" prefWidth="200.0" spacing="10" BorderPane.alignment="CENTER">
+         <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onMouseClicked="#startGameClicked" text="Start Game with this map" />
+      </HBox>
+   </bottom>
+   <right>
+      <VBox fx:id="rightVBox" prefHeight="200.0" prefWidth="100.0" spacing="10" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>
